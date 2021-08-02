@@ -1,0 +1,312 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background-image: url('تنزيل.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+h1 {
+color:#6D3272;
+}
+.navbar {
+  overflow: hidden;
+  background-color: black ;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color:D2D3D3   ;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+img 1 {
+max-width:100;
+max-height:100;
+img-align: center;
+}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div class="navbar">
+<img src="BFA13668-E01D-4449-BBFF-F0DC33331C92 (2) (1).png"  width="100" class="center" alt="">
+  <a href="Home.html">Home</a>
+  <a href="gallery.html">gallery</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">more
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="contacte.html">contacte</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  </div> 
+  
+</div>
+<br></br>
+
+
+</style>
+<br></br>
+<img id="myImg" src="IMG-6401.jpg" alt="by maha, pics art" width="700" height="600" style="display: block;
+  margin-left: auto;
+  margin-right: auto;">
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<br></br>
+
+
+<img id="myImg" src="2FCDB6E9-A3E3-4059-BF14-3E2C725B0C1D.JPEG" alt="Northern Lights, Norway" width="700" height="600" style="display: block;
+  margin-left: auto;
+  margin-right: auto;">
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img02">
+  <div id="caption"></div>
+</div>
+<br></br>
+
+
+  <img id="myImg" src="6D8B14D5-9BAA-4DAF-A01A-F9DE7DC115A9.JPEG" alt="Northern Lights, Norway" width="700" height="600" style="display: block;
+  margin-left: auto;
+  margin-right: auto;">
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<br></br>
+  <img id="myImg" src="308E0E6F-230E-4826-AE11-ADA0A1503986.jpeg" alt="Northern Lights, Norway" width="700" height="600" style="display: block;
+  margin-left: auto;
+  margin-right: auto;">
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+  <br></br>
+
+  <img id="myImg" src="BA5CB977-A9B6-4904-8334-9B6FA12D8DDF.jpeg" alt="Northern Lights, Norway" width="700" height="600" style="display: block;
+  margin-left: auto;
+  margin-right: auto;">
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+   <br></br>
+
+  <img id="myImg" src="42848359-F11C-483C-804F-D1A6E196BEA7.jpeg" alt="Northern Lights, Norway" width="700" height="600" style="display: block;
+  margin-left: auto;
+  margin-right: auto;">
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+     <br></br>
+
+  <img id="myImg" src="1B8B9BEC-92BC-4A6D-978A-34896FF85CE5.jpeg" alt="Northern Lights, Norway" width="700" height="600" style="display: block;
+  margin-left: auto;
+  margin-right: auto;">
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+     <br></br>
+  <img id="myImg" src="7249145E-B051-4DD8-9C91-500D8EA05507.jpeg" alt="Northern Lights, Norway" width="700" height="700" style="display: block;
+  margin-left: auto;
+  margin-right: auto;">
+  
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+  <br></br>
+  <button  style="text-align: center;
+border: 7px solid black;
+width: 100px;
+height: 100px;
+padding-top: 20px;" onclick="window.print()" >Print this pics</button>
+ 
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<script>
+var modal = document.getElementById('myModal');
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+</script>
+</body>
+</html>
