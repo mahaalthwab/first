@@ -1,4 +1,4 @@
 # first
-hello world
+hello everyone
 my first repository on github
 
